@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hersh.coldplay.vivavidaplay.MainActivity" >
+
+    <ScrollView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/togglebutton"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lyrics"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/textView1"
+        android:background="@color/grey"
+        android:onClick="onToggleClicked"
+        android:textColor="@color/white"
+        android:textOff="Paused"
+        android:textOn="Playing"
+        android:textSize="22sp" />
+    
+    <LinearLayout
+        android:id= "@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView1"
+        android:baselineAligned="false"
+        android:weightSum="2" >
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:weightSum="1"
+            android:baselineAligned="false" >
+
+        	<Button
+            	android:id="@+id/button2"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:onClick="openInfo"
+        		android:text="Band Info" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+
+            <Button
+            	android:id="@+id/button4"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:onClick="openLyrics"
+            	android:text="Lyrics" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

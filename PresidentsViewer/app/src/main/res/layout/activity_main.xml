@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.onescious.droid.presidentsviewer.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="The Presidents of the USA"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText1"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:onClick="showPresidents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="Presidents"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/presidents"
+                android:backgroundTint="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/presidentnames"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="George Washington, 1789-1797 \n
+John Adams, 1797-1801 \n
+Thomas Jefferson, 1801-1809 \n
+James Madison, 1809-1817 \n
+James Monroe, 1817-1825 \n
+John Quincy Adams, 1825-1829 \n
+Andrew Jackson, 1829-1837 \n
+Martin Van Buren, 1837-1841 \n
+William Henry Harrison, 1841 \n
+John Tyler, 1841-1845 \n
+James Knox Polk, 1845-1849 \n
+Zachary Taylor, 1849-1850 \n
+Millard Fillmore, 1850-1853 \n
+Franklin Pierce, 1853-1857 \n
+James Buchanan, 1857-1861 \n
+Abraham Lincoln, 1861-1865 \n
+Andrew Johnson, 1865-1869 \n
+Ulysses S. Grant, 1869-1877 \n
+Rutherford Birchard Hayes, 1877-1881 \n
+James Abram Garfield, 1881 \n
+Chester Alan Arthur, 1881-1885 \n
+Grover Cleveland, 1885-1889 \n
+Benjamin Harrison, 1889-1893 \n
+Grover Cleveland, 1893-1897 \n
+William McKinley, 1897-1901 \n
+Theodore Roosevelt, 1901-1909 \n
+William Howard Taft, 1909-1913 \n
+Woodrow Wilson, 1913-1921 \n
+Warren Gamaliel Harding, 1921-1923 \n
+Calvin Coolidge, 1923-1929 \n
+Herbert Clark Hoover, 1929-1933 \n
+Franklin Delano Roosevelt, 1933-1945 \n
+Harry S. Truman, 1945-1953 \n
+Dwight David Eisenhower, 1953-1961 \n
+John Fitzgerald Kennedy, 1961-1963 \n
+Lyndon Baines Johnson, 1963-1969 \n
+Richard Milhous Nixon, 1969-1974 \n
+Gerald Rudolph Ford, 1974-1977 \n
+James Earl Carter, Jr., 1977-1981 \n
+Ronald Wilson Reagan, 1981-1989 \n
+George Herbert Walker Bush, 1989-1993 \n
+William Jefferson Clinton, 1993-2001 \n
+George Walker Bush, 2001-2009 \n
+Barack Hussein Obama, 2009-2017"
+                    android:textSize="16sp"
+                    android:textAlignment="center" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

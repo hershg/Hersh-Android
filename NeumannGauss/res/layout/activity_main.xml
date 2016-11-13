@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="godse.hersh.awesome2a.MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:text="John von Neumann"
+        android:gravity="center" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText1"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="2" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical" >
+            
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+		        android:paddingBottom="8dp"
+		        android:contentDescription="John von Neumann"
+                android:scaleType="fitCenter"
+		        android:src="@drawable/neumann" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical" >
+		    
+		    <ScrollView
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+                android:scrollbars="vertical" >
+		
+		        <EditText
+		            android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+		            android:text="John von Neumann, original name János Neumann   (born December 28, 1903, Budapest, Hungary—died February 8, 1957, Washington, D.C., U.S.), Hungarian-born American mathematician. As an adult, he appended von to his surname; the hereditary title had been granted his father in 1913. Von Neumann grew from child prodigy to one of the world’s foremost mathematicians by his mid-twenties. Important work in set theory inaugurated a career that touched nearly every major branch of mathematics. Von Neumann’s gift for applied mathematics took his work in directions that influenced quantum theory, automata theory, economics, and defense planning. Von Neumann pioneered game theory and, along with Alan Turing and Claude Shannon, was one of the conceptual inventors of the stored-program digital computer."
+		            android:textSize="22sp" />
+		    </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

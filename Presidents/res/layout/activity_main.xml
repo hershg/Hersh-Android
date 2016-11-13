@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="godse.hersh.awesome2a.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Presidents Of The United States Of America"
+        android:textSize="22sp" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText1"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="2" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical" >
+            
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+		        android:paddingBottom="8dp"
+		        android:contentDescription="John von Neumann"
+                android:scaleType="fitCenter"
+		        android:src="@drawable/presidents" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.96"
+                android:scrollbars="vertical" >
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="1.\t\tGeorge Washington (1789-1797)\n2.\t\tJohn Adams (1797-1801)\n3.\t\tThomas Jefferson (1801-1809)\n4.\t\tJames Madison (1809-1817)\n5.\t\tJames Monroe (1817-1825)\n6.\t\tJohn Quincy Adams (1825-1829)\n7.\t\tAndrew Jackson (1829-1837)\n8.\t\tMartin Van Buren (1837-1841)\n9.\t\tWilliam Henry Harrison (1841)\n10.\t\tJohn Tyler (1841-1845)\n11.\t\tJames K. Polk (1845-1849)\n12.\t\tZachary Taylor (1849-1850)\n13.\t\tMillard Fillmore (1850-1853)\n14.\t\tFranklin Pierce (1853-1857)\n15.\t\tJames Buchanan (1857-1861)\n16.\t\tAbraham Lincoln (1861-1865)\n17.\t\tAndrew Johnson (1865-1869)\n18.\t\tUlysses S. Grant (1869-1877)\n19.\t\tRutherford B. Hayes (1877-1881)\n20.\t\tJames A. Garfield (1881)\n21.\t\tChester Arthur (1881-1885)\n22.\t\tGrover Cleveland (1885-1889)\n23.\t\tBenjamin Harrison (1889-1893)\n24.\t\tGrover Cleveland (1893-1897)\n25.\t\tWilliam McKinley (1897-1901)\n26.\t\tTheodore Roosevelt (1901-1909)\n27.\t\tWilliam Howard Taft (1909-1913)\n28.\t\tWoodrow Wilson (1913-1921)\n29.\t\tWarren G. Harding (1921-1923)\n30.\t\tCalvin Coolidge (1923-1929)\n31.\t\tHerbert Hoover (1929-1933)\n32.\t\tFranklin D. Roosevelt (1933-1945)\n33.\t\tHarry S Truman (1945-1953)\n34.\t\tDwight D. Eisenhower (1953-1961)\n35.\t\tJohn F. Kennedy (1961-1963)\n36.\t\tLyndon B. Johnson (1963-1969)\n37.\t\tRichard Nixon (1969-1974)\n38.\t\tGerald Ford (1974-1977)\n39.\t\tJimmy Carter (1977-1981)\n40.\t\tRonald Reagan (1981-1989)\n41.\t\tGeorge Bush (1989-1993)\n42.\t\tBill Clinton (1993-2001)\n43.\t\tGeorge W. Bush (2001-2009)\n44.\t\tBarack Obama (2009-present)"
+                    android:textSize="30sp" />
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

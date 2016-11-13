@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="godse.hersh.awesome2a.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Carl Gauss"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="Carl Gauss"
+        android:src="@drawable/gauss" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="7dp"
+        android:scrollbars="vertical" 
+        >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="286dp"
+            android:layout_height="197dp"
+            android:layout_alignRight="@+id/scrollView1"
+            android:layout_alignTop="@+id/imageView1"
+            android:ems="10"
+            android:text="Carl Friedrich Gauss, original name Johann Friedrich Carl Gauss (born April 30, 1777, Brunswick [Germany]—died February 23, 1855, Göttingen, Hanover), German mathematician, generally regarded as one of the greatest mathematicians of all time for his contributions to number theory, geometry, probability theory, geodesy, planetary astronomy, the theory of functions, and potential theory (including electromagnetism)." >
+
+            <requestFocus />
+        </EditText>
+    </ScrollView>
+    
+</RelativeLayout>
